@@ -1,0 +1,73 @@
+@font-face {
+    font-family: 'Comfortaa Regular';
+    src: url('../fonts/comfortaa/Comfortaa-Regular.ttf');
+    src: local('Comfortaa Regular'),
+    local('Comfortaa'),
+    url('../fonts/comfortaa/Comfortaa-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Pacifico.ttf';
+    src: url('../fonts/pacifico/Pacifico.ttf');
+    src: local('Pacifico'),
+    local('Pacifico'),
+    url('../fonts/pacifico/Pacifico.ttf') format('truetype')
+}
+
+body{
+    font-family: 'Comfortaa Regular' , cursive;
+    text-align: justify;
+    font-size: medium;
+    color: white;
+    background-image: url("../img/ui.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-clip: border-box;
+    margin-bottom: 1%;
+    transition: background-color .5s;
+}
+
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: black;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: cornflowerblue;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
